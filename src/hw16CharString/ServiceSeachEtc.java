@@ -25,7 +25,6 @@ public class ServiceSeachEtc {
 //Target: Plant
 //Result: -1
     int findWordPosition(String source, String target) {
-//        if (source.toLowerCase().contains(target.toLowerCase().toCharArray().))
         System.out.print(source + "\n" + target);
         if (source.toLowerCase().contains(target.toLowerCase())) {
             return source.toLowerCase().indexOf(target.toLowerCase());
@@ -52,14 +51,13 @@ public class ServiceSeachEtc {
     boolean isPalindrome(String str) {
         char[] chars = str.toLowerCase().toCharArray();
         int count = 0;
-            for (int i = 0; i < chars.length / 2; i++) {
-                if (chars[i] == chars[chars.length - 1 - i]) {
-                    count++;
-//                    System.out.println(chars[i] + " " + (chars[chars.length - 1 - i]));
-                } else {
-                    return false;
-                }
+        for (int i = 0; i < chars.length / 2; i++) {
+            if (chars[i] == chars[chars.length - 1 - i]) {
+                count++;
+            } else {
+                return false;
             }
+        }
         if (count == chars.length / 2) return true;
         else return false;
     }

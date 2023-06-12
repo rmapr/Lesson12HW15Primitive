@@ -52,7 +52,7 @@ public class Task6GuessWord {
 //                    Замінити вгадану букву
                     charsCodingWord[i] = charEnteredWord[i];
 //                    Якщо лічильник співпадає з кількістю букв у слові, то вгадали )
-                    if (maxNumberCharsGuess == charEnteredWord.length) {
+                    if (maxNumberCharsGuess == charTarget.length) {
                         codingWord = String.valueOf(charsCodingWord).replace('#', ' ');
                         return codingWord.trim();
                     }
